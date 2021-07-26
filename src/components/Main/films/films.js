@@ -18,7 +18,7 @@ const Films = () => {
 
   const allFilm = films.map((film => (
     <li className="cards__card" key={film.id}>
-      <img className="cards__card__img"src={`${URLIMG}${film.poster_path}`} alt="poster du film" />
+      <img className="cards__card__img"src={`${URLIMG}${film.poster_path}`} alt={`poster du film ${film.original_title}`} />
       <div className="cards__card__desc">
       <h2 className="cards__card__desc__title">{film.original_title}</h2>
       <span className="cards__card__desc__rate">{film.vote_average}</span>

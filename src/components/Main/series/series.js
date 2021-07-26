@@ -18,7 +18,7 @@ const loadData = async () => {
 
 const allSeries = series.map((serie => (
   <li className="cards__card" key={serie.id}>
-    <img className="cards__card__img"src={`${URLIMG}${serie.poster_path}`} alt="poster du film" />
+    <img className="cards__card__img"src={`${URLIMG}${serie.poster_path}`} alt={`poster de la serie ${serie.original_name}`} />
     <div className="cards__card__desc">
     <h2 className="cards__card__desc__title">{serie.original_name}</h2>
     <span className="cards__card__desc__rate">{serie.vote_average}</span>
