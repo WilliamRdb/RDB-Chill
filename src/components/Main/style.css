@@ -5,6 +5,18 @@ body {
   min-width: 410px;
   width: 100%;
 }
+.main__ancre {
+  width: 10px;
+  height: 10px;
+  position: fixed;
+  bottom: 2vh;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
 .cards {
   display: flex;
   flex-wrap: wrap;

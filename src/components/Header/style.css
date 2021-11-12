@@ -24,7 +24,7 @@
 .header__nav__list__item:hover {
   color: red;
 }
-.header__logo {
+.header__logo__item {
   color: red;
   text-transform: uppercase;
   font-weight: bold;

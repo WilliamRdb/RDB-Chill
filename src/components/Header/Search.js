@@ -1,8 +1,5 @@
-import React, {useState} from 'react';
-import './style.css';
-import Nav from './Nav.js'
-import Logo from './Logo.js'
-const Header = ({parentCallback}) => {
+import React,{useState} from 'react';
+const Search = (parentCallback) => {
   const [value, setValue] = useState('')
   
   const handleOnSubmit = (e) => {
@@ -14,13 +11,9 @@ const Header = ({parentCallback}) => {
   const handleOnChange = (e) => {
     setValue(e.target.value)
   }
-
   return (
-    <header>
-      <div className="header" id="header">
-        <Nav/>
-        <Logo />
-        <div className="header__search">
+    <>
+      <div className="header__search">
           <form action="submit" onSubmit={handleOnSubmit}>
             <input 
               value= {value}
@@ -31,9 +24,8 @@ const Header = ({parentCallback}) => {
             />
           </form>
         </div>
-      </div>
-    </header>
+    </>
   );
 };
 
-export default Header;
+export default Search;

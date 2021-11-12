@@ -10,11 +10,11 @@ function App() {
     setValue1(value);
   }
   return (
-    <div className="App">
-      <Header parentCallback={parentCallback}/>
-      <Main search={value1}/> 
-      <Footer />
-    </div>
+        <div className="App">
+          <Header parentCallback={parentCallback}/>
+          <Main search={value1}/> 
+          <Footer />
+        </div>
   );
 }
 
